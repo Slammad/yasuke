@@ -142,7 +142,10 @@ if(isset($_POST['form1'])) {
 		unset($_POST['dep_name']);
 		unset($_POST['dep_slug']);
 		unset($_POST['dep_detail']);
-		
+		unset($_POST['dep_address']);
+		unset($_POST['dep_phone']);
+		unset($_POST['dep_fax']);
+		unset($_POST['dep_email']);
 		unset($_POST['meta_title']);
 		unset($_POST['meta_keyword']);
 		unset($_POST['meta_description']);
@@ -200,7 +203,30 @@ if(isset($_POST['form1'])) {
 								<textarea class="form-control" name="dep_detail" id="editor1"><?php if(isset($_POST['Extra_detail'])){echo $_POST['dep_detail'];} ?></textarea>
 							</div>
 						</div>
-						
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Address </label>
+							<div class="col-sm-6">
+								<textarea class="form-control" name="dep_address" style="height:140px;"><?php if(isset($_POST['dep_address'])){echo $_POST['dep_address'];} ?></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Phone </label>
+							<div class="col-sm-6">
+								<input type="text" autocomplete="off" class="form-control" name="dep_phone" value="<?php if(isset($_POST['dep_phone'])){echo $_POST['dep_phone'];} ?>">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Fax </label>
+							<div class="col-sm-6">
+								<input type="text" autocomplete="off" class="form-control" name="dep_fax" value="<?php if(isset($_POST['dep_fax'])){echo $_POST['dep_fax'];} ?>">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Email </label>
+							<div class="col-sm-6">
+								<input type="text" autocomplete="off" class="form-control" name="dep_email" value="<?php if(isset($_POST['dep_email'])){echo $_POST['dep_email'];} ?>">
+							</div>
+						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Featured Photo <span>*</span></label>
 							<div class="col-sm-9" style="padding-top:5px">
