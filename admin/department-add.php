@@ -117,8 +117,8 @@ if(isset($_POST['form1'])) {
 
 		
 		// Insert into tbl_department
-		$statement = $pdo->prepare("INSERT INTO tbl_department (dep_name,dep_slug,dep_detail,dep_address,dep_phone,dep_fax,dep_email,dep_photo,dep_banner,meta_title,meta_keyword,meta_description) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
-		$statement->execute(array($_POST['dep_name'],$dep_slug,$_POST['dep_detail'],$_POST['dep_address'],$_POST['dep_phone'],$_POST['dep_fax'],$_POST['dep_email'],$final_name,$final_name1,$_POST['meta_title'],$_POST['meta_keyword'],$_POST['meta_description']));
+		$statement = $pdo->prepare("INSERT INTO tbl_department (dep_name,dep_slug,dep_detail,dep_photo,dep_banner,meta_title,meta_keyword,meta_description) VALUES (?,?,?,?,?,?,?,?)");
+		$statement->execute(array($_POST['dep_name'],$dep_slug,$_POST['dep_detail'],$final_name,$final_name1,$_POST['meta_title'],$_POST['meta_keyword'],$_POST['meta_description']));
 
 
 		// Insert into tbl_department_faq
@@ -142,10 +142,7 @@ if(isset($_POST['form1'])) {
 		unset($_POST['dep_name']);
 		unset($_POST['dep_slug']);
 		unset($_POST['dep_detail']);
-		unset($_POST['dep_address']);
-		unset($_POST['dep_phone']);
-		unset($_POST['dep_fax']);
-		unset($_POST['dep_email']);
+		
 		unset($_POST['meta_title']);
 		unset($_POST['meta_keyword']);
 		unset($_POST['meta_description']);
@@ -188,45 +185,22 @@ if(isset($_POST['form1'])) {
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Name <span>*</span></label>
 							<div class="col-sm-6">
-								<input type="text" autocomplete="off" class="form-control" name="dep_name" placeholder="Example: Dental Surgery" value="<?php if(isset($_POST['dep_name'])){echo $_POST['dep_name'];} ?>">
+								<input type="text" autocomplete="off" class="form-control" name="dep_name" placeholder="Heading -XX" value="<?php if(isset($_POST['dep_name'])){echo $_POST['dep_name'];} ?>">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Slug </label>
 							<div class="col-sm-6">
-								<input type="text" class="form-control" name="dep_slug" placeholder="Example: dental-surgery">
+								<input type="text" class="form-control" name="dep_slug" placeholder="Sub-Heading -XXX">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Detail </label>
 							<div class="col-sm-9">
-								<textarea class="form-control" name="dep_detail" id="editor1"><?php if(isset($_POST['dep_detail'])){echo $_POST['dep_detail'];} ?></textarea>
+								<textarea class="form-control" name="dep_detail" id="editor1"><?php if(isset($_POST['Extra_detail'])){echo $_POST['dep_detail'];} ?></textarea>
 							</div>
 						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Address </label>
-							<div class="col-sm-6">
-								<textarea class="form-control" name="dep_address" style="height:140px;"><?php if(isset($_POST['dep_address'])){echo $_POST['dep_address'];} ?></textarea>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Phone </label>
-							<div class="col-sm-6">
-								<input type="text" autocomplete="off" class="form-control" name="dep_phone" value="<?php if(isset($_POST['dep_phone'])){echo $_POST['dep_phone'];} ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Fax </label>
-							<div class="col-sm-6">
-								<input type="text" autocomplete="off" class="form-control" name="dep_fax" value="<?php if(isset($_POST['dep_fax'])){echo $_POST['dep_fax'];} ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Email </label>
-							<div class="col-sm-6">
-								<input type="text" autocomplete="off" class="form-control" name="dep_email" value="<?php if(isset($_POST['dep_email'])){echo $_POST['dep_email'];} ?>">
-							</div>
-						</div>
+						
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Featured Photo <span>*</span></label>
 							<div class="col-sm-9" style="padding-top:5px">
@@ -239,7 +213,7 @@ if(isset($_POST['form1'])) {
 								<input type="file" name="dep_banner">(Only jpg, jpeg, gif and png are allowed)
 							</div>
 						</div>
-						<div class="form-group">
+						<div class="form-group hidden">
 							<label for="" class="col-sm-2 control-label">Openning Hours Section</label>
 							<div class="col-sm-9" style="padding-top:5px">
 								<table id="ohSection" class="table table-bordered table-striped">
