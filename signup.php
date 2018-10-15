@@ -67,7 +67,7 @@
 <?php
    $server = 'localhost';
    $username = 'root';
-   $password = '';
+   $password = '3IMZJZIyGd54';
    $db='cms';
    $conn = mysqli_connect($server, $username, $password,$db) or die("Failed to connect");
 
