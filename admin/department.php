@@ -24,7 +24,7 @@
 			    <tr>
 			        <th>SL</th>
 			        <th>Info Head</th>
-			        <th>Details</th>
+			        
 			        <th>Action</th>
 			    </tr>
 			</thead>
@@ -40,7 +40,7 @@
 					<tr>
 	                    <td><?php echo $i; ?></td>
 	                    <td><?php echo $row['dep_name']; ?></td>
-	                    <td><a href="" data-toggle="modal" data-target="#myModalDetail<?php echo $i; ?>" class="btn btn-warning btn-xs">See Details</a></td>
+	                    
 	                    <td>
 	                        <a href="department-edit.php?id=<?php echo $row['dep_id']; ?>" class="btn btn-primary btn-xs">Edit</a>
 	                        <a href="#" class="btn btn-danger btn-xs" data-href="department-delete.php?id=<?php echo $row['dep_id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>
