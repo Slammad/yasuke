@@ -30,21 +30,21 @@
                         <img src="assets/images/ping.png" style="height: 150px;" alt="">
                         
                     </div>
-                    <form action="index.php" method="POST">
+                    <form action="signup.php" method="POST">
                         <div class="form-group has-icon"><i class="fa fa-user"></i>
-                            <input type="text" name='ver' class="form-control form-control-lg"
+                            <input type="text" name='firstname' class="form-control form-control-lg"
                                    placeholder="FirstName">
                         </div>
                         <div class="form-group has-icon"><i class="fa fa-id-card"></i>
-                            <input type="text" name='ver' class="form-control form-control-lg"
+                            <input type="text" name='lastname' class="form-control form-control-lg"
                                    placeholder="LastName">
                         </div>
                         <div class="form-group has-icon"><i class="fa fa-envelope"></i>
-                            <input type="text" name='ver' class="form-control form-control-lg"
+                            <input type="text" name='email' class="form-control form-control-lg"
                                    placeholder="Email">
                         </div>
                         <div class="form-group has-icon"><i class="fa fa-phone"></i>
-                            <input type="text" name='ver' class="form-control form-control-lg"
+                            <input type="text" name='phone' class="form-control form-control-lg"
                                    placeholder="Phone">
                         </div>
                        
@@ -65,12 +65,30 @@
 </html>
 
 <?php
-   
+   $server = 'localhost';
+   $username = 'root';
+   $password = '';
+   $db='cms';
+   $conn = mysqli_connect($server, $username, $password,$db) or die("Failed to connect");
+
         if(isset($_POST['submit'])) {
-       
-        $sn=$_POST['ver'];
+            $first = $_POST['firstname'];
+            $last = $_POST['lastname'];
+            $email = $_POST['email'];
+            $phone = $_POST['phone'];
+
+
+        $query = "INSERT INTO `reg_users`(`id`,`firstname`,`lastname`,`email`,`phone`) VALUES(NULL,'$first','$last','$email','$phone')";
+
+        $run = $conn->mysqli_query($query);
         
-        echo $sn;
+        if($run){
+            echo "Success";
+        }else{
+            echo "Failed";
+        }
+        
+        
         }
 
   
