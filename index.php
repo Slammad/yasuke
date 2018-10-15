@@ -88,48 +88,6 @@ foreach ($result as $row) {
 <!-- Slider End -->
 
 
-<?php if($home_status_service == 1): ?>
-<!-- Service Start -->
-<section class="service-v1">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="heading">
-					<h2><?php echo $home_title_service; ?></h2>
-					<p><?php echo $home_subtitle_service; ?></p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<?php
-			$statement = $pdo->prepare("SELECT * FROM tbl_service ORDER BY id ASC");
-			$statement->execute();
-			$result = $statement->fetchAll(PDO::FETCH_ASSOC);							
-			foreach ($result as $row) {
-				?>
-				<div class="col-sm-6 col-md-4 col-lg-4">
-					<div class="item">
-						<div class="photo" style="background-image:url(<?php echo BASE_URL; ?>assets/uploads/<?php echo $row['photo']; ?>);">
-						</div>
-						<div class="text">
-							<div class="inner">
-								<h3><a href="<?php echo BASE_URL; ?>service/<?php echo $row['slug']; ?>"><?php echo $row['name']; ?></a></h3>
-								<p><?php echo $row['short_description']; ?></p>
-								<p class="button">
-									<a href="<?php echo BASE_URL; ?>service/<?php echo $row['slug']; ?>">Read More</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<?php
-			}
-			?>
-		</div>
-	</div>
-</section>
-<!-- Service End -->
-<?php endif; ?>
 
 
 
