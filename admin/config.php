@@ -9,13 +9,13 @@ $dbhost = 'localhost';
 $dbname = 'cms';
 
 // Database Username
-$dbuser = 'Slammad';
+$dbuser = 'root';
 
 // Database Password
-$dbpass = 'Slammad42';
+$dbpass = '3IMZJZIyGd54';
 
 // Defining base url
-define("BASE_URL", "");
+define("BASE_URL", "http://35.185.16.197/");
 
 // Getting Admin url
 define("ADMIN_URL", BASE_URL . "admin" . "/");
