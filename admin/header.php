@@ -63,7 +63,7 @@ if($_SESSION['user']['role']=='Publisher') {
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Yourdoctor - Admin Panel</title>
+	<title>YASUKE - Admin Panel</title>
 
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
@@ -90,7 +90,7 @@ if($_SESSION['user']['role']=='Publisher') {
 		<header class="main-header">
 
 			<a href="index.php" class="logo">
-				<span class="logo-lg">Yourdoctor</span>
+				<span class="logo-lg">YASUKE</span>
 			</a>
 
 			<nav class="navbar navbar-static-top">
@@ -186,85 +186,32 @@ if($_SESSION['user']['role']=='Publisher') {
 			        <?php endif; ?>
 			        
 
-					<li class="treeview <?php if( ($cur_page == 'category-add.php')||($cur_page == 'category.php')||($cur_page == 'category-edit.php') || ($cur_page == 'news-add.php')||($cur_page == 'news.php')||($cur_page == 'news-edit.php') || ($cur_page == 'comment.php') ) {echo 'active';} ?>">
-						<a href="#">
-							<i class="fa fa-podcast"></i>
-							<span>News Section</span>
-							<span class="pull-right-container">
-								<i class="fa fa-angle-left pull-right"></i>
-							</span>
-						</a>
-						<ul class="treeview-menu">
-							<li><a href="category.php"><i class="fa fa-circle-o"></i> Category</a></li>
-							<li><a href="news.php"><i class="fa fa-circle-o"></i> News</a></li>
-							<li><a href="comment.php"><i class="fa fa-circle-o"></i> Comment</a></li>
-						</ul>
-					</li>
+				
 
-										
-
-					<li class="treeview <?php if( ($cur_page == 'designation-add.php')||($cur_page == 'designation.php')||($cur_page == 'designation-edit.php') || ($cur_page == 'doctor-add.php')||($cur_page == 'doctor.php')||($cur_page == 'doctor-edit.php') ) {echo 'active';} ?>">
-						<a href="#">
-							<i class="fa fa-podcast"></i>
-							<span>Doctor Section</span>
-							<span class="pull-right-container">
-								<i class="fa fa-angle-left pull-right"></i>
-							</span>
-						</a>
-						<ul class="treeview-menu">
-							<li><a href="designation.php"><i class="fa fa-circle-o"></i> Designation</a></li>
-							<li><a href="doctor.php"><i class="fa fa-circle-o"></i> Doctor</a></li>
-						</ul>
-					</li>
+				
 
 					
 
 					<li class="treeview <?php if( ($cur_page == 'slider-add.php')||($cur_page == 'slider.php')||($cur_page == 'slider-edit.php') || ($cur_page == 'testimonial-add.php')||($cur_page == 'testimonial.php')||($cur_page == 'testimonial-edit.php') || ($cur_page == 'partner-add.php')||($cur_page == 'partner.php')||($cur_page == 'partner-edit.php') || ($cur_page == 'service-add.php')||($cur_page == 'service.php')||($cur_page == 'service-edit.php') || ($cur_page == 'department-add.php')||($cur_page == 'department.php')||($cur_page == 'department-edit.php') ) {echo 'active';} ?>">
 						<a href="#">
 							<i class="fa fa-podcast"></i>
-							<span>Elements Section</span>
+							<span>Contents Section</span>
 							<span class="pull-right-container">
 								<i class="fa fa-angle-left pull-right"></i>
 							</span>
 						</a>
 						<ul class="treeview-menu">
 							<li><a href="slider.php"><i class="fa fa-circle-o"></i> Slider</a></li>
-							<li><a href="testimonial.php"><i class="fa fa-circle-o"></i> Testimonial</a></li>
-							<li><a href="partner.php"><i class="fa fa-circle-o"></i> Partner</a></li>
+							
+						
 							<li><a href="service.php"><i class="fa fa-circle-o"></i> Service</a></li>
-							<li><a href="department.php"><i class="fa fa-circle-o"></i> Department</a></li>
+							<li><a href="department.php"><i class="fa fa-circle-o"></i> Additional Info</a></li>
 						</ul>
 					</li>
 					
 
-					<li class="treeview <?php if( ($cur_page == 'pricing-plan-add.php')||($cur_page == 'pricing-plan.php')||($cur_page == 'pricing-plan-edit.php') || ($cur_page == 'pricing-item-add.php')||($cur_page == 'pricing-item.php')||($cur_page == 'pricing-item-edit.php') ) {echo 'active';} ?>">
-						<a href="#">
-							<i class="fa fa-podcast"></i>
-							<span>Pricing Section</span>
-							<span class="pull-right-container">
-								<i class="fa fa-angle-left pull-right"></i>
-							</span>
-						</a>
-						<ul class="treeview-menu">
-							<li><a href="pricing-plan.php"><i class="fa fa-circle-o"></i> Pricing Plan</a></li>
-							<li><a href="pricing-item.php"><i class="fa fa-circle-o"></i> Pricing Item</a></li>
-						</ul>
-					</li>
+				
 
-
-					<li class="treeview <?php if( ($cur_page == 'faq-category-add.php')||($cur_page == 'faq-category.php')||($cur_page == 'faq-category-edit.php') || ($cur_page == 'faq-add.php')||($cur_page == 'faq.php')||($cur_page == 'faq-edit.php') ) {echo 'active';} ?>">
-						<a href="#">
-							<i class="fa fa-podcast"></i>
-							<span>FAQ Section</span>
-							<span class="pull-right-container">
-								<i class="fa fa-angle-left pull-right"></i>
-							</span>
-						</a>
-						<ul class="treeview-menu">
-							<li><a href="faq-category.php"><i class="fa fa-circle-o"></i> FAQ Category</a></li>
-							<li><a href="faq.php"><i class="fa fa-circle-o"></i> FAQ</a></li>
-						</ul>
-					</li>
 
 					
 
@@ -274,14 +221,13 @@ if($_SESSION['user']['role']=='Publisher') {
 			        <li class="treeview <?php if( ($cur_page == 'photo-category-add.php')||($cur_page == 'photo-category.php')||($cur_page == 'photo-category-edit.php') || ($cur_page == 'photo-add.php')||($cur_page == 'photo.php')||($cur_page == 'photo-edit.php') || ($cur_page == 'video-category-add.php')||($cur_page == 'video-category.php')||($cur_page == 'video-category-edit.php') || ($cur_page == 'video-add.php')||($cur_page == 'video.php')||($cur_page == 'video-edit.php') ) {echo 'active';} ?>">
 						<a href="#">
 							<i class="fa fa-podcast"></i>
-							<span>Photo and Video</span>
+							<span>Free Materials</span>
 							<span class="pull-right-container">
 								<i class="fa fa-angle-left pull-right"></i>
 							</span>
 						</a>
 						<ul class="treeview-menu">
-							<li><a href="photo-category.php"><i class="fa fa-circle-o"></i> Photo Category</a></li>
-							<li><a href="photo.php"><i class="fa fa-circle-o"></i> Photo Gallery</a></li>
+						
 							<li><a href="video-category.php"><i class="fa fa-circle-o"></i> Video Category</a></li>
 							<li><a href="video.php"><i class="fa fa-circle-o"></i> Video</a></li>
 						</ul>
@@ -289,21 +235,7 @@ if($_SESSION['user']['role']=='Publisher') {
 
 					
 					
-			        <li class="treeview <?php if( ($cur_page == 'advertisement-home.php') || ($cur_page == 'advertisement-sidebar.php') || ($cur_page == 'advertisement-sidebar-add.php') || ($cur_page == 'advertisement-sidebar-edit.php') || ($cur_page == 'advertisement-category.php') || ($cur_page == 'advertisement-category-add.php') || ($cur_page == 'advertisement-category-edit.php') ) {echo 'active';} ?>">
-						<a href="#">
-							<i class="fa fa-podcast"></i>
-							<span>Advertisement</span>
-							<span class="pull-right-container">
-								<i class="fa fa-angle-left pull-right"></i>
-							</span>
-						</a>
-						<ul class="treeview-menu">
-							<li><a href="advertisement-home.php"><i class="fa fa-circle-o"></i> Advertisement (Home)</a></li>
-							<li><a href="advertisement-sidebar.php"><i class="fa fa-circle-o"></i> Advertisement (Sidebar)</a></li>
-							<li><a href="advertisement-category.php"><i class="fa fa-circle-o"></i> Advertisement (Category)</a></li>
-						</ul>
-					</li>
-
+			      
 
 					<li class="treeview <?php if( ($cur_page == 'file-add.php')||($cur_page == 'file.php')||($cur_page == 'file-edit.php') ) {echo 'active';} ?>">
 			          <a href="file.php">
