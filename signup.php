@@ -35,15 +35,15 @@
                             <input type="text" name='ver' class="form-control form-control-lg"
                                    placeholder="FirstName">
                         </div>
-                        <div class="form-group has-icon"><i class="icon-bank"></i>
+                        <div class="form-group has-icon"><i class="fa fa-card"></i>
                             <input type="text" name='ver' class="form-control form-control-lg"
                                    placeholder="LastName">
                         </div>
-                        <div class="form-group has-icon"><i class="icon-bank"></i>
+                        <div class="form-group has-icon"><i class="fa fa-mail"></i>
                             <input type="text" name='ver' class="form-control form-control-lg"
                                    placeholder="Email">
                         </div>
-                        <div class="form-group has-icon"><i class="icon-bank"></i>
+                        <div class="form-group has-icon"><i class="icon-phone"></i>
                             <input type="text" name='ver' class="form-control form-control-lg"
                                    placeholder="Phone">
                         </div>
