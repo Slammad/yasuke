@@ -26,7 +26,7 @@
             <div class="row">
                 <div class="col-lg-4 mx-md-auto paper-card">
                     <div class="text-center">
-                        <img src="assets/images/ping.png" style="height: 100px;" alt="">
+                        <img src="assets/images/ping.png" style="height: 150px;" alt="">
                         
                     </div>
                     <form action="index.php" method="POST">
