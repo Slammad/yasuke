@@ -80,7 +80,7 @@
 
         $query = "INSERT INTO `reg_users`(`id`,`firstname`,`lastname`,`email`,`phone`) VALUES(NULL,'$first','$last','$email','$phone')";
 
-        $run = $conn->mysqli_query($query);
+        $run =mysqli_query($conn,$query);
         
         if($run){
             echo "Success";
