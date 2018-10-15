@@ -137,7 +137,7 @@ if(isset($_POST['form1'])) {
 			}
 		}
 			
-		$success_message = 'Department is added successfully!';
+		$success_message = 'Data Added successfully!';
 
 		unset($_POST['dep_name']);
 		unset($_POST['dep_slug']);

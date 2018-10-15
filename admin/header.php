@@ -204,7 +204,7 @@ if($_SESSION['user']['role']=='Publisher') {
 							<li><a href="slider.php"><i class="fa fa-circle-o"></i> Slider</a></li>
 							
 						
-							<li><a href="service.php"><i class="fa fa-circle-o"></i> Service</a></li>
+						
 							<li><a href="department.php"><i class="fa fa-circle-o"></i> Additional Info</a></li>
 						</ul>
 					</li>

@@ -64,7 +64,7 @@ foreach ($result as $row)
 		<div class="row">
 			<div class="col-md-12">
 				<div class="banner-text">
-					<h1>Department: <?php echo $dep_name; ?></h1>
+					<h1><?php echo $dep_name; ?></h1>
 				</div>
 			</div>
 		</div>
@@ -110,7 +110,7 @@ foreach ($result as $row)
 				<!-- Sidebar Container Start -->
 				<div class="sidebar">
 					<div class="widget">
-						<h4>Services</h4>
+						<h4>Other Info</h4>
 						<ul>
 							<?php
 							$statement = $pdo->prepare("SELECT * FROM tbl_department ORDER BY dep_name ASC");
