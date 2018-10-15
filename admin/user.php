@@ -11,7 +11,7 @@
 
 <section class="content">
 
-  <div class="row">
+  <div class="row hidden">
     <div class="col-md-12">
 
       <div class="box box-info">
@@ -85,11 +85,11 @@
 			<thead>
 			    <tr>
 			        <th>SL</th>
-			        <th>Name</th>
-			        <th>Photo</th>
-			        <th>Email Address</th>
-			        <th>Role</th>
-			        <th>Status</th>
+			        <th>FirstName</th>
+			       
+			        <th>LastName</th>
+			        <th>Email</th>
+			        <th>Phone</th>
 			        <th>Action</th>
 			    </tr>
 			</thead>
@@ -97,7 +97,7 @@
 
 				<?php
                     $i=0;
-                    $statement = $pdo->prepare("SELECT * FROM tbl_user");
+                    $statement = $pdo->prepare("SELECT * FROM reg_users");
                     $statement->execute();
                     $result = $statement->fetchAll(PDO::FETCH_ASSOC);                            
                     foreach ($result as $row) {
@@ -105,20 +105,11 @@
                     	?>
 						<tr>
 		                    <td><?php echo $i; ?></td>
-		                    <td><?php echo $row['full_name']; ?></td>
-		                    <td>
-		                    	<?php
-		                    	if($row['photo']=='') {
-		                    		echo '<img src="../assets/uploads/no-photo.jpg" width="100">';
-		                    	} else {
-									echo '<img src="../assets/uploads/'.$row['photo'].'" width="100">';
-		                    	}
-		                    	?>
-		                    	
-		                    </td>
+		                    <td><?php echo $row['firstname']; ?></td>
+		                  
+		                    <td><?php echo $row['lastname']; ?></td>
 		                    <td><?php echo $row['email']; ?></td>
-		                    <td><?php echo $row['role']; ?></td>
-		                    <td><?php echo $row['status']; ?></td>
+		                    <td><?php echo $row['phone']; ?></td>
 		                    <td>
 		                        <?php
 		                        	if($i != 1) {
