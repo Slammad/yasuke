@@ -50,48 +50,13 @@
 		<section class="footer-main">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-6 col-md-3 col-lg-3 footer-col">
+					<div class="col-sm-12 col-md-6 col-lg-6 footer-col">
 						<h3>About Us</h3>
 						<p>
 							<?php echo nl2br($footer_about); ?>
 						</p>
 					</div>
-					<div class="col-sm-6 col-md-3 col-lg-3 footer-col">
-						<h3>Latest News</h3>
-						<?php
-						$i=0;
-						$statement = $pdo->prepare("SELECT * FROM tbl_news ORDER BY news_id DESC");
-						$statement->execute();
-						$result = $statement->fetchAll(PDO::FETCH_ASSOC);							
-						foreach ($result as $row) {
-							$i++;
-							if($i>$total_recent_news_footer) {break;}
-							?>
-							<div class="news-item">
-								<div class="news-title"><a href="<?php echo BASE_URL; ?>news/<?php echo $row['news_slug']; ?>"><?php echo $row['news_title']; ?></a></div>
-							</div>
-							<?php
-						}
-						?>
-					</div>
-					<div class="col-sm-6 col-md-3 col-lg-3 footer-col">
-						<h3>Popular News</h3>
-						<?php
-						$i=0;
-						$statement = $pdo->prepare("SELECT * FROM tbl_news ORDER BY total_view DESC");
-						$statement->execute();
-						$result = $statement->fetchAll(PDO::FETCH_ASSOC);							
-						foreach ($result as $row) {
-							$i++;
-							if($i>$total_popular_news_footer) {break;}
-							?>
-							<div class="news-item">
-								<div class="news-title"><a href="<?php echo BASE_URL; ?>news/<?php echo $row['news_slug']; ?>"><?php echo $row['news_title']; ?></a></div>
-							</div>
-							<?php
-						}
-						?>
-					</div>
+				
 					<div class="col-sm-6 col-md-3 col-lg-3 footer-col">
 						<h3>Contact Us</h3>
 						<div class="contact-item">
