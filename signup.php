@@ -79,8 +79,9 @@
 
         $check = "SELECT * FROM `reg_users` WHERE `email`='$email'";
        
-        $count=mysqli_fetch_array($conn,$check);
-        if($count == 0){
+        $num_row = mysqli_num_rows($conn,$check);
+
+        if($num_row == 0){
             $query = "INSERT INTO `reg_users`(`id`,`firstname`,`lastname`,`email`,`phone`) VALUES(NULL,'$first','$last','$email','$phone')";
             $run =mysqli_query($conn,$query);
             if($run){
