@@ -79,14 +79,22 @@
 
 
         $query = "INSERT INTO `reg_users`(`id`,`firstname`,`lastname`,`email`,`phone`) VALUES(NULL,'$first','$last','$email','$phone')";
-
-        $run =mysqli_query($conn,$query);
-        
-        if($run){
-            echo "Success";
+        $count=mysqli_fetch_array($conn,$query);
+        if($count == 0){
+            $run =mysqli_query($conn,$query);
+            if($run){
+                echo " <div class='alert alert-success alert-dismissable'>
+                <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>×</button>
+                <strong>Thank you for signing up we will get back to you shortly Successful!</strong> .
+            </div>";
+            }
         }else{
-            echo "Failed";
+            echo " <div class='alert alert-danger alert-dismissable'>
+            <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>×</button>
+            <strong>Well done!</strong> This Account is already registered.
+        </div>";
         }
+        
         
         
         }
