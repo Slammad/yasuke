@@ -117,8 +117,8 @@ if(isset($_POST['form1'])) {
 
 		
 		// Insert into tbl_department
-		$statement = $pdo->prepare("INSERT INTO tbl_department (dep_name,dep_slug,dep_detail,dep_photo,dep_banner,meta_title,meta_keyword,meta_description) VALUES (?,?,?,?,?,?,?,?)");
-		$statement->execute(array($_POST['dep_name'],$dep_slug,$_POST['dep_detail'],$final_name,$final_name1,$_POST['meta_title'],$_POST['meta_keyword'],$_POST['meta_description']));
+		$statement = $pdo->prepare("INSERT INTO tbl_department (dep_name,dep_slug,dep_detail,' ',' ',' ',' ',dep_photo,dep_banner,meta_title,meta_keyword,meta_description) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
+		$statement->execute(array($_POST['dep_name'],$dep_slug,$_POST['dep_detail'],$_POST['dep_address'],$_POST['dep_phone'],$_POST['dep_fax'],$_POST['dep_email'],$final_name,$final_name1,$_POST['meta_title'],$_POST['meta_keyword'],$_POST['meta_description']));
 
 
 		// Insert into tbl_department_faq
