@@ -2,7 +2,7 @@
 
 <section class="content-header">
 	<div class="content-header-left">
-		<h1>Other Infot</h1>
+		<h1>Other Info</h1>
 	</div>
 	<div class="content-header-right">
 		<a href="department-add.php" class="btn btn-primary btn-sm">Add New</a>
