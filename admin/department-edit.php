@@ -174,7 +174,7 @@ if(isset($_POST['form1'])) {
 			}
 		}  
 
-	    $success_message = 'Department is updated successfully!';
+	    $success_message = 'Updated successfully!';
 	}
 }
 ?>

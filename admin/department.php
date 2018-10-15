@@ -2,7 +2,7 @@
 
 <section class="content-header">
 	<div class="content-header-left">
-		<h1>View Department</h1>
+		<h1>Other Infot</h1>
 	</div>
 	<div class="content-header-right">
 		<a href="department-add.php" class="btn btn-primary btn-sm">Add New</a>
@@ -23,7 +23,7 @@
 			<thead>
 			    <tr>
 			        <th>SL</th>
-			        <th>Department Name</th>
+			        <th>Info Head</th>
 			        <th>Details</th>
 			        <th>Action</th>
 			    </tr>
