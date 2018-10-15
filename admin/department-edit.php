@@ -285,25 +285,25 @@ foreach ($result as $row) {
 								<textarea class="form-control" name="dep_detail" id="editor1"><?php echo $dep_detail; ?></textarea>
 							</div>
 						</div>
-						<div class="form-group">
+						<div class="form-group hidden">
 							<label for="" class="col-sm-2 control-label">Address </label>
 							<div class="col-sm-6">
 								<textarea class="form-control" name="dep_address" style="height:140px;"><?php echo $dep_address; ?></textarea>
 							</div>
 						</div>
-						<div class="form-group">
+						<div class="form-group hidden">
 							<label for="" class="col-sm-2 control-label">Phone </label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="dep_phone" value="<?php echo $dep_phone; ?>">
 							</div>
 						</div>
-						<div class="form-group">
+						<div class="form-group hidden">
 							<label for="" class="col-sm-2 control-label">Fax </label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="dep_fax" value="<?php echo $dep_fax; ?>">
 							</div>
 						</div>
-						<div class="form-group">
+						<div class="form-group hidden">
 							<label for="" class="col-sm-2 control-label">Email </label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="dep_email" value="<?php echo $dep_email; ?>">
@@ -333,7 +333,7 @@ foreach ($result as $row) {
 								<input type="file" name="dep_banner">(Only jpg, jpeg, gif and png are allowed)
 							</div>
 						</div>
-						<div class="form-group">
+						<div class="form-group hidden">
 							<label for="" class="col-sm-2 control-label">Openning Hours Section</label>
 							<div class="col-sm-9" style="padding-top:5px">
 								<table id="ohSection" class="table table-bordered table-striped">
