@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="assets/img/basic/favicon.ico" type="image/x-icon">
-    <title>mini project 1</title>
+    <title>Join Yasuke trade room</title>
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/app.css">
  
@@ -31,12 +31,24 @@
                         <p class="p-t-b-20">Welcome to YasukeOnCharts Sign up to get more contents</p>
                     </div>
                     <form action="index.php" method="POST">
+                        <div class="form-group has-icon"><i class="glyphicon glyphicon-user"></i>
+                            <input type="text" name='ver' class="form-control form-control-lg"
+                                   placeholder="FirstName">
+                        </div>
                         <div class="form-group has-icon"><i class="icon-bank"></i>
                             <input type="text" name='ver' class="form-control form-control-lg"
-                                   placeholder="Serial Number">
+                                   placeholder="LastName">
+                        </div>
+                        <div class="form-group has-icon"><i class="icon-bank"></i>
+                            <input type="text" name='ver' class="form-control form-control-lg"
+                                   placeholder="Email">
+                        </div>
+                        <div class="form-group has-icon"><i class="icon-bank"></i>
+                            <input type="text" name='ver' class="form-control form-control-lg"
+                                   placeholder="Phone">
                         </div>
                        
-                        <input type="submit"  name="submit" class="btn btn-primary btn-lg btn-block" value="Verify Drug">
+                        <input type="submit"  name="submit" class="btn btn-primary btn-lg btn-block" value="Sign Up">
                        
                     </form>
                 </div>
