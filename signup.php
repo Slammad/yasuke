@@ -30,7 +30,7 @@
                         
                     </div>
                     <form action="index.php" method="POST">
-                        <div class="form-group has-icon"><i class="glyphicon glyphicon-user"></i>
+                        <div class="form-group has-icon"><i class="fa fa-user"></i>
                             <input type="text" name='ver' class="form-control form-control-lg"
                                    placeholder="FirstName">
                         </div>
