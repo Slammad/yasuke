@@ -77,10 +77,11 @@
             $email = $_POST['email'];
             $phone = $_POST['phone'];
 
-
-        $query = "INSERT INTO `reg_users`(`id`,`firstname`,`lastname`,`email`,`phone`) VALUES(NULL,'$first','$last','$email','$phone')";
-        $count=mysqli_fetch_array($conn,$query);
+        $check = "SELECT * FROM `reg_users` WHERE `email`='$email'";
+       
+        $count=mysqli_fetch_array($conn,$check);
         if($count == 0){
+            $query = "INSERT INTO `reg_users`(`id`,`firstname`,`lastname`,`email`,`phone`) VALUES(NULL,'$first','$last','$email','$phone')";
             $run =mysqli_query($conn,$query);
             if($run){
                 echo " <div class='alert alert-success alert-dismissable'>
