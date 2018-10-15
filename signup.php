@@ -43,7 +43,7 @@
                             <input type="text" name='ver' class="form-control form-control-lg"
                                    placeholder="Email">
                         </div>
-                        <div class="form-group has-icon"><i class="fa-phone"></i>
+                        <div class="form-group has-icon"><i class="fa fa-phone"></i>
                             <input type="text" name='ver' class="form-control form-control-lg"
                                    placeholder="Phone">
                         </div>
