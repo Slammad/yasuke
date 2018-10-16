@@ -70,9 +70,7 @@ foreach ($result as $row) {
 								<?php endif; ?>
 								
 								<?php if($row['button_text']!=''): ?>
-								<p class="button">
-									<a href="<?php echo $row['button_url']; ?>" class="btn btn-flat"><?php echo $row['button_text']; ?></a>
-								</p>
+								
 								<?php endif; ?>
 
 							</div>
