@@ -68,7 +68,7 @@ $total_subscriber = $statement->rowCount();
         <span class="info-box-icon bg-red"><i class="fa fa-camera"></i></span>
         <div class="info-box-content">
           <span class="info-box-text">Total Videos</span>
-          <span class="info-box-number"><?php echo $total_photo; ?></span>
+          <span class="info-box-number"><?php echo $total_video; ?></span>
         </div>
       </div>
     </div>
