@@ -15,7 +15,7 @@ $dbuser = 'root';
 $dbpass = '3IMZJZIyGd54';
 
 // Defining base url
-define("BASE_URL", "http://yoctraderoom.com/");
+define("BASE_URL", "https://yoctraderoom.com/");
 
 // Getting Admin url
 define("ADMIN_URL", BASE_URL . "admin" . "/");
