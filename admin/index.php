@@ -9,7 +9,7 @@ $statement = $pdo->prepare("SELECT * FROM tbl_user");
 $statement->execute();
 $total_user = $statement->rowCount();
 
-$statement = $pdo->prepare("SELECT * FROM tbl_category");
+$statement = $pdo->prepare("SELECT * FROM reg_users");
 $statement->execute();
 $total_category = $statement->rowCount();
 
@@ -46,7 +46,7 @@ $total_subscriber = $statement->rowCount();
       <div class="info-box">
         <span class="info-box-icon bg-red"><i class="fa fa-tasks"></i></span>
         <div class="info-box-content">
-          <span class="info-box-text">Total Categories</span>
+          <span class="info-box-text">Total Members</span>
           <span class="info-box-number"><?php echo $total_category; ?></span>
         </div>
       </div>
