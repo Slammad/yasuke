@@ -577,7 +577,7 @@ foreach ($result as $row) {
 							<div class="box-group" id="accordion">
 								
 								<!-- Service Section -->
-								<div class="panel box box-primary">
+								<div class="panel box box-primary hidden">
 									<div class="box-header">
 										<h4 class="box-title">
 											<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
@@ -616,7 +616,7 @@ foreach ($result as $row) {
 									<div class="box-header">
 										<h4 class="box-title">
 											<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-												Department
+												Other Info
 											</a>
 										</h4>
 									</div>
@@ -648,7 +648,7 @@ foreach ($result as $row) {
 
 
 								<!-- Doctor Section -->
-								<div class="panel box box-primary">
+								<div class="panel box box-primary hidden">
 									<div class="box-header">
 										<h4 class="box-title">
 											<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
@@ -684,7 +684,7 @@ foreach ($result as $row) {
 
 
 								<!-- Pricing Section -->
-								<div class="panel box box-primary">
+								<div class="panel box box-primary hidden">
 									<div class="box-header">
 										<h4 class="box-title">
 											<a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
@@ -720,7 +720,7 @@ foreach ($result as $row) {
 
 
 								<!-- Testimonial Section -->
-								<div class="panel box box-primary">
+								<div class="panel box box-primary hidden">
 									<div class="box-header">
 										<h4 class="box-title">
 											<a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
@@ -756,7 +756,7 @@ foreach ($result as $row) {
 
 
 								<!-- Latest News Section -->
-								<div class="panel box box-primary">
+								<div class="panel box box-primary hidden">
 									<div class="box-header">
 										<h4 class="box-title">
 											<a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
@@ -792,7 +792,7 @@ foreach ($result as $row) {
 
 
 								<!-- Partner Section -->
-								<div class="panel box box-primary">
+								<div class="panel box box-primary hidden">
 									<div class="box-header">
 										<h4 class="box-title">
 											<a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
